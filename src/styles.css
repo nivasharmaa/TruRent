@@ -1,0 +1,1088 @@
+/* Universal Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  
+  body {
+    font-family: Arial, sans-serif; 
+  }
+
+  
+
+/* Header and Navigation */
+header {
+  background-color: #fff; /* White background */
+  padding: 20px 40px; /* Adjust padding as needed */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between logo and other elements */
+  align-items: center; /* Center everything vertically */
+  font-family: Arial, sans-serif; 
+}
+
+/* Logo Styling */
+.logo a {
+  font-family: 'Arial', sans-serif;
+  font-size: 2.5rem; /* Adjust the size */
+  color: #ff6900; /* Orange color */
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-right: 40px; /* Adjust space between logo and nav items */
+}
+
+/* Navigation Menu */
+nav ul {
+  list-style-type: none;
+  display: flex; /* Horizontal alignment of nav items */
+  gap: 30px; /* Space between each item */
+  margin: 0;
+  position: relative; /* Position for dropdown */
+}
+
+nav ul li {
+  margin-right: 15px;
+  position: relative; /* Ensure dropdown positions correctly */
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ff6900; /* Hover effect */
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+  display: none; /* Hide dropdown by default */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+nav ul li:hover .dropdown {
+  display: block; /* Show dropdown on hover */
+}
+.dropdown li {
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.dropdown li a {
+  padding: 10px 15px; /* Add padding to dropdown links */
+  display: block; /* Make the links block-level for easier clicking */
+  color: #333; /* Color for dropdown links */
+}
+
+.dropdown li a:hover {
+  background-color: #f0f0f0; /* Background color on hover */
+}
+
+/* Book Button Styling */
+.book-btn {
+  background-color: #ff6900; /* Orange color */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.book-btn:hover {
+  background-color: #e04e00;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.book-btn i {
+  margin-left: 5px;
+}
+
+
+/* Importing DM Sans */
+@font-face {
+  font-family: 'Arial';
+  font-style: bold;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/dmsans/v15/rP2Fp2ywxg089UriCZa4Hz-DJF4e8A.woff2) format('woff2');
+  unicode-range: U+0000-00FF;
+}
+
+  
+  /* Main Sections */
+  section {
+    padding: 60px;
+    margin-bottom: 40px;
+    background-color: #fff; /* Consistent light background */
+    border-radius: 10px; /* Softer rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+
+  
+  
+  
+  /* Hero Section */
+  /* General Styling */
+  body {
+    background-color: #eee; /* Main background is white */
+    color: #000; /* Black text */
+    font-family: Arial, sans-serif;
+  }
+  
+  h1, h2, h3 {
+    color: #ff6900; /* Orange titles */
+    font-family: Arial, sans-serif; 
+  }
+  
+  a {
+    color: #000; /* Black text for links */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #ff6900; /* Orange hover for links */
+  }
+  
+  .hero-section .hero-content p {
+    color: #fff; /* White text for <p> inside hero section */
+    font-family: Arial, sans-serif; 
+    font-size: 22px; /* Adjust size if necessary */
+    line-height: 1.5; /* Better spacing for readability */
+  }
+
+  /* Hero Section Styling */
+  .hero-section {
+    background-image: url('./images/truck-background.png'); /* Path to your background image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    text-align: center;
+    animation: fadeIn 3s ease-in-out; /* Hero section fade-in */
+}
+
+.hero-form input, .hero-form button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: slideDown 1.5s ease-in-out forwards; /* Slide in effect */
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    animation: slideDown 2s ease-in-out forwards;
+}
+
+  
+  .location-form {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .location-form input {
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ff5a00;
+    font-size: 1rem;
+}
+
+  
+  .location-form button {
+    padding: 10px 20px;
+    background-color: #ff5a00; /*orange for button */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .location-form button:hover {
+    background-color: #e04e00; /* Darker orange on hover */
+  }
+  /* Checkfare button styling */
+  .check-fare-btn {
+    background-color: #ff6900; /* Bright orange */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Button transitions */
+  }
+  
+  .check-fare-btn:hover {
+    background-color: #e65b00; /* Slightly darker orange on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+  }
+  
+  
+  /* Main Content Section */
+  /* Main Sections Consistency */
+  section {
+    padding: 60px;
+    margin-bottom: 40px;
+    background-color: #fff; /* Consistent light background */
+    border-radius: 10px; /* Softer rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Title Styling */
+  section h2 {
+    font-size: 2rem;
+    color: #ff6900; /* Orange title for emphasis */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Paragraph and Content Styling */
+  section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center; /* Center-aligning content */
+    color: #000;
+  }
+  
+  /* Service Cards Styling */
+  .service-cards {
+    display: flex; /* This makes the service cards act as flex items, arranging them horizontally. */
+    justify-content: space-between; /* Adds equal space between each card. */
+    align-content: center; /* Aligns the flex lines (if the items wrap) in the center vertically. */
+    flex-wrap: wrap; /* Allows the cards to wrap onto multiple lines if they don't fit in one row. */
+  }
+  
+  
+  .service-card {
+    background-color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+    min-width: 100px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.service-card:hover {
+  background-color: #000; /* Change to the orange background on hover */
+  color: #fff; /* Change text color on hover */
+  transform: scale(1.10); /* Slightly enlarge the card */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add a stronger shadow */
+}
+  
+  
+  .service-card h3 {
+    font-size: 1.2rem;
+    color: #ff6900;
+  }
+  
+  .service-card p {
+    color: #fff;
+  }
+  
+  /* Image and Icon Styling */
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+ 
+
+/* How It Works Section */
+.how-it-works {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #fff; /* Change to white for a cleaner look */
+  border-radius: 15px; /* Slightly more rounded corners */
+  margin: 50px 0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for a more professional feel */
+  animation: fadeInUp 1.5s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.how-it-works:hover {
+  transform: translateY(-10px); /* Slight lift on hover */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+.how-it-works .text-content {
+  flex: 1;
+  padding-right: 40px;
+  color: #000;
+  animation: fadeInLeft 1.5s ease-in-out; /* Animation for text sliding in */
+}
+
+.how-it-works .text-content h2 {
+  color: #ff6900;
+  margin-bottom: 20px;
+  font-size: 2rem; /* Larger, bolder heading */
+  animation: fadeInDown 1.2s ease-in-out; /* Animation for heading */
+}
+
+.how-it-works .text-content p {
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  color: #666; /* Softer black for the paragraph */
+}
+
+.how-it-works ol {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+.how-it-works ol li {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.how-it-works ol li:hover {
+  color: #ff6900; /* Change text color to orange on hover */
+}
+
+.how-it-works .image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  animation: fadeInRight 1.5s ease-in-out; /* Animation for the image sliding in */
+}
+
+.how-it-works img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.how-it-works img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+/* Strengths and Advantages Section */
+.advantages-section {
+  padding: 20px;
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+}
+
+.advantages-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #ff6900; /* Orange color for the heading */
+  margin-bottom: 20px;
+}
+
+.advantages-section p {
+  text-align: center;
+  font-size: 16px;
+  color: #000; /* Black text for the description */
+  margin-bottom: 30px;
+}
+
+.advantages-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items at the top */
+  gap: 30px;
+  padding: 20px;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* Vertically align the sections inside each column */
+  gap: 20px; /* Space between vertical sections */
+}
+
+.advantage-item {
+  padding: 20px;
+  background-color: transparent;
+  color: #fff; /* white text */
+  text-align: center;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  border-radius: 10px;
+}
+
+.advantage-item h3 {
+  color: #ff6900; /* Orange color for subheadings */
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.mobile-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-image img {
+  max-width: 130%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover; /* Ensures the image covers the container */
+  padding: 10px; /* Optional padding for better spacing */
+}
+/* Hover effect */
+.advantage-item:hover {
+  background-color: #fff; /* Black background on hover */
+  color: #fff; /* White text on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Box shadow for hover */
+  transform: scale(1.05); /* Enlarge on hover */
+}
+
+/* Meet Our Team Section */
+.team-section {
+  padding: 40px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  color: #ff6900;
+  margin-bottom: 40px;
+}
+
+.team-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.team-member img {
+  width: 500px; /* Set a fixed width */
+  height: 600px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image maintains aspect ratio and fills the box */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add slight shadow for depth */
+}
+
+.team-member {
+  flex: 1 1 30%; /* Adjust the percentage for image and text spacing */
+  text-align: center;
+  margin: 20px;
+}
+
+
+.team-member h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.team-member p {
+  font-style: italic;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Hover effect on the team images */
+.team-member img:hover {
+  transform: scale(1.05); /* Slight enlarge on hover */
+  transition: transform 0.3s ease;
+}
+
+/* Our Trucks Section Styling */
+.trucks-section {
+  padding: 50px;
+  background-color: #fff; /* White background */
+  text-align: center;
+}
+
+.trucks-section h2 {
+  color: #ff6900; /* Orange title */
+  margin-bottom: 20px;
+}
+
+.trucks-section p {
+  font-size: 1.2rem;
+  color: #333; /* Gray text */
+  margin-bottom: 40px;
+}
+
+.truck-gallery {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.truck-item {
+  flex: 1 1 30%; /* Adjust based on how many trucks */
+  margin: 15px;
+  text-align: center;
+}
+
+.truck-item img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.truck-item p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #000;
+}
+
+/* Global Styles for the about page */ 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.about-hero {
+    background-color: #000;
+    color: #fff;
+    padding: 100px;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    color: #ff6900; /* Orange color */
+}
+
+.about-hero p {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* Mission Section */
+.mission-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.mission-content h2 {
+    color: #ff6900;
+    margin-bottom: 20px;
+}
+
+.mission-content p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Team Section */
+#team {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+#team h2 {
+  color: #ff6900;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* Wrapper to display team members in a grid */
+.team-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  justify-items: center; /* Centers team members */
+}
+
+/* Team Member styling */
+.team-member {
+  width: 100%; /* Full width of the column */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Hover effect for team member */
+.team-member:hover {
+  transform: scale(1.02); /* Slight zoom on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Team member image styling */
+
+.team-member img {
+  width: 100%; /* Ensure both images are the same width */
+  max-width: 400px; /* Set max width for consistency */
+  height: 451px; /* Maintain aspect ratio */
+  border-radius: 10px; /* Slight border radius */
+  object-fit: cover; /* Ensures the image covers the container */
+}
+
+.team-member h3, .team-member p {
+  font-size: 1.4rem; /* Uniform text size for names */
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.team-member p {
+  font-style: italic;
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Ensure uniform card size and alignment */
+.team-member {
+  width: 100%; 
+  max-width: 400px; /* Ensuring both members have consistent width */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+/* contact us page */
+
+/* Hero Section */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-hero {
+  background-color: #000;
+  color: #fff;
+  padding: 100px;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+.contact-hero h1 {
+  font-size: 3.0rem;
+  color: #ff6900;
+  animation: slideInFromTop 1s ease-out;
+}
+.contact-hero p {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 10px;
+}
+
+/* Grid Layout for Contact Info Section */
+.contact-info-grid {
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 40px;
+  align-items: center;
+}
+.contact-details-grid {
+  color: #333;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.contact-details-grid h2 {
+  color: #ff6900;
+  margin-bottom: 20px;
+}
+.contact-details-grid:hover {
+  transform: translateY(-5px); /* Hover effect */
+}
+.contact-map-grid {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Form Section with Grid and Animation */
+.contact-form-advanced {
+  background-color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+.contact-form-advanced h2 {
+  color: #ff6900;
+  margin-bottom: 30px;
+  animation: slideInFromTop 1s ease-out;
+}
+.advanced-form {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr; /* Single column initially */
+  gap: 20px;
+}
+.form-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  gap: 20px;
+}
+.advanced-form input,
+.advanced-form textarea {
+  padding: 15px;
+  font-size: 1.1rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+.advanced-form input:focus,
+.advanced-form textarea:focus {
+  border-color: #ff6900;
+}
+.advanced-form textarea {
+  grid-column: span 3; /* Make the textarea span all columns */
+  height: 150px;
+}
+.advanced-form button {
+  padding: 15px;
+  background-color: #ff6900;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.advanced-form button:hover {
+  background-color: #e65b00;
+  transform: translateY(-3px);
+}
+
+/* Our Trucks page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* Trucks Page Hero Section */
+.trucks {
+  background-color: #000; /* Black background for contrast */
+  color: #fff; /* White text for high contrast */
+  padding: 100px; /* Adequate padding for spacing */
+  text-align: center; /* Center-align content */
+}
+
+.trucks h1 {
+  font-size: 3rem; /* Large font size for the main heading */
+  color: #ff6900; /* Signature orange color for the main heading */
+  margin-bottom: 20px; /* Spacing below the heading */
+}
+
+.trucks p {
+  font-size: 1.5rem; /* Slightly smaller font size for the subtext */
+  color: #fff; /* White color for the paragraph text */
+  margin-top: 10px; /* Spacing above the paragraph */
+}
+
+
+/* Responsive Styling for smaller screens */
+@media (max-width: 768px) {
+  .truck-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .truck-item {
+    padding: 15px;
+  }
+
+  .truck-item p {
+    font-size: 0.9rem;
+  }
+}
+/* Services page */
+
+/* Services Page Hero Section */
+.services-hero {
+  background-color: #000; /* Black background for the hero section */
+  color: #fff; /* White text */
+  padding: 100px; /* Spacing for the hero */
+  text-align: center; /* Center-align content */
+}
+
+.services-hero h1 {
+  font-size: 3rem;
+  color: #ff6900; /* Orange color for the heading */
+  margin-bottom: 20px; /* Spacing below the heading */
+}
+
+.services-hero p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+/* Services Section Styling */
+.services-section {
+  padding: 60px;
+  background-color: #fff;
+}
+
+.services-section h2 {
+  font-size: 2.5rem;
+  color: #ff6900; /* Orange for consistency */
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 40px; /* Spacing between grid items */
+}
+
+.service-item {
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-10px); /* Lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.service-item h3 {
+  font-size: 1.8rem;
+  color: #ff6900; /* Orange for heading */
+  margin-bottom: 15px;
+}
+
+.service-item p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Footer Styles */
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  border-radius: 20px;
+  margin-top: 20px;
+    margin-bottom: 20px;
+  animation: fadeInUp 1.5s ease-in-out; /* Footer fade-in */
+}
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+    flex-wrap: wrap;
+  }
+  
+  .footer-content div {
+    width: 22%;
+    
+  }
+  
+  .footer-content ul {
+    list-style-type: none;
+    padding: 60;
+  }
+  
+  .footer-content ul li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  footer a {
+    color: #fff; /* White text for links */
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #ff6900; /* Orange hover effect */
+  }
+  
+  .footer-subscribe input {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 0px 0 0 0px;
+    outline: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-subscribe button {
+    background-color: #ff6900;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid #000;
+ }
+  
+  .footer-bottom p {
+    color: #000;
+  }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid #000;
+ }
+  .footer-bottom p {
+    color: #000;
+  }
+  .footer-bottom {
+    padding: 10px 0;
+    border-top: 1px solid #7b7571; /* Slim and professional border */
+    width: 90%;   
+    margin: 0 auto; /* Center the border horizontally */
+    text-align: center; /* Ensures content is centered */
+}
+
+.footer-bottom p {
+    color: #fff;
+    margin: 0;
+    text-align: center; /* Centers the copyright text */
+}
+
+/* Keyframe animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}  
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Stack grid columns on mobile */
+  }
+  .form-group {
+    grid-template-columns: 1fr; /* Single column form inputs on mobile */
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
